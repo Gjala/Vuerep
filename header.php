@@ -14,7 +14,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light text-decoration-none">
-  <a class="navbar-brand img-fluid l_height" href="/assets/img/logo.png">
+  <a class="navbar-brand img-fluid l_height" href="#">
     <?php bloginfo('name'); ?>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
