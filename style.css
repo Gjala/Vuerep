@@ -232,11 +232,11 @@ ul {
    
 }
 #sticky-social {
-   right: 0;
-   position: fixed;
-   top: 150px;
-   position: fixed;
-   z-index: 999;
+  right: 0;
+  position: fixed;
+  top: 150px;
+  position: fixed;
+  z-index: 999;
 }
 #sticky-social a {
    background: #333;
