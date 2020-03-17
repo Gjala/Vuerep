@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-      <nav class="navbar-head"></nav>
+      
 	  
 	<!--Navbar head-->
 

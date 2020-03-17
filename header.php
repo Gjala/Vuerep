@@ -17,7 +17,8 @@
 		<a class="navbar-brand img-fluid img-fluid" href="index.php"><img class="l_height" src="<?php the_field('navbar-brand') ?>" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
-		</button>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
       <?php   wp_nav_menu (array( 
           'theme location' => 'main_nav',
           'container' => false,         

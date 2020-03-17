@@ -6,7 +6,7 @@
 }
 
 body {
-background: url(/img/1.jpg);
+
 background-size:cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -193,7 +193,7 @@ p {
 
 .footer-head {
   height: 50px;
-background: transparent url("/img/footer-top.png") no-repeat center bottom;
+background: transparent url("/assets/img/footer-top1.png") no-repeat center bottom;
 position: relative;
 z-index: 1;
 }
@@ -268,7 +268,7 @@ ul {
 #sticky-social a[class*="video"] span { background: #FF0000; } 
 
 .navbar {
-  background:url(/img/header.png);
+  background:url(/assets/img/head1.png);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ ul {
 
 .navbar-head {
   height: 50px;
-  background: transparent url("/img/head.png") no-repeat center bottom;
+  background: transparent url("/assets/img/head.pnghttp://localhost/wp/wp-content/uploads/2020/03/head1.png") no-repeat center bottom;
   position: relative;
   z-index: 1;
 }
