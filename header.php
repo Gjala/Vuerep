@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <title><?php bloginfo( 'description' ); ?></title>
-
-<?php wp_head(); ?>
+  <?php
+wp_head();
+?>
 </head>
+
 <body style="background-image: url(<?php the_field('background_image') ?>);">
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light text-decoration-none">
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-decoration-none navbar-head">
   <a class="navbar-brand img-fluid l_height" href="#">
     <?php bloginfo('name'); ?>
   </a>
@@ -27,7 +28,7 @@
       'theme_location'  => '',
       'container'       => '',
       'container_id'    => '',
-      'container_class' => '',
+      'container_class' => 'navbar text-decoration-none navbar-head',
       'menu_id'         => false,
       'menu_class'      => '',
       'depth'           => 0,
