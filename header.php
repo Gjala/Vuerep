@@ -22,8 +22,8 @@
   </button>
   <?php
     wp_nav_menu([
-      'menu'            => 'primary',
-      'theme_location'  => 'main_nav',
+      'menu'            => 'Header Menu',
+      'theme_location'  => 'menu-1',
       'container'       => 'div',
       'container_id'    => 'navbarCollapse',
       'container_class' => 'collapse navbar-collapse',
