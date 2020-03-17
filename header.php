@@ -12,17 +12,26 @@
 </head>
 <body style="background-image: url(<?php the_field('background_image') ?>);">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light text-decoration-none">
-    
-		<a class="navbar-brand img-fluid img-fluid" href="index.php"><img class="l_height" src="<?php the_field('navbar-brand') ?>" alt=""></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-      <?php   wp_nav_menu (array( 
-          'theme location' => 'main_nav',
-          'container' => false,         
-          'menu_class' => 'navbar navbar-expand-lg navbar-light bg-light text-decoration-none',
-          'menu_id' => 'navbarContent'
-           ) );   ?>
-		</div>
-	  </nav>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">
+    <?php bloginfo('name'); ?>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <?php
+    wp_nav_menu([
+      'menu'            => 'primary',
+      'theme_location'  => 'main_nav',
+      'container'       => 'div',
+      'container_id'    => 'navbarCollapse',
+      'container_class' => 'collapse navbar-collapse',
+      'menu_id'         => false,
+      'menu_class'      => 'navbar-nav mr-auto',
+      'depth'           => 0,
+      'fallback_cb'     => 'bs4navwalker::fallback',
+      'walker'          => new bs4navwalker()
+    ]);
+  ?>
+</nav>

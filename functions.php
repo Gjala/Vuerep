@@ -31,3 +31,5 @@ add_action( 'after_setup_theme', function(){
 		'footer_menu' => 'Footer Menu'
 	] );
 } );
+
+require_once('bs4navwalker.php');
