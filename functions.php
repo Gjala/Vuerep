@@ -4,6 +4,7 @@ add_action( 'wp_enqueue_scripts', 'lilage_scripts' );
 
 
 function lilage_style() {
+    wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css');
     wp_enqueue_style( 'magnific-style', get_template_directory_uri() . '/assets/css/magnific-popup.css');
     wp_enqueue_style( 'reset-style', get_template_directory_uri() . '/assets/css/reset.css');
     wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css');

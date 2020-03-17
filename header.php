@@ -13,22 +13,23 @@
 <body style="background-image: url(<?php the_field('background_image') ?>);">
 
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-decoration-none">
+  <a class="navbar-brand img-fluid l_height" href="/assets/img/logo.png">
     <?php bloginfo('name'); ?>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class=" navbar-nav mr-auto collapse navbar-collapse" id="navbarContent">
   <?php
     wp_nav_menu([
-      'menu'            => 'Header Menu',
-      'theme_location'  => 'menu-1',
-      'container'       => 'div',
-      'container_id'    => 'navbarCollapse',
-      'container_class' => 'collapse navbar-collapse',
+      'menu'            => '',
+      'theme_location'  => '',
+      'container'       => '',
+      'container_id'    => '',
+      'container_class' => '',
       'menu_id'         => false,
-      'menu_class'      => 'navbar-nav mr-auto',
+      'menu_class'      => '',
       'depth'           => 0,
       'fallback_cb'     => 'bs4navwalker::fallback',
       'walker'          => new bs4navwalker()
