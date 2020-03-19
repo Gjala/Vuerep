@@ -15,7 +15,7 @@ function lilage_style() {
 function lilage_scripts() {
 
     wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' );
+	
 	wp_enqueue_script( 'jquery' );
 
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ));

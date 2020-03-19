@@ -195,7 +195,6 @@ p {
 
 .footer-head {
   height: 50px;
-background: transparent url("/assets/img/footer-top.png") no-repeat center bottom;
 position: relative;
 z-index: 1;
 }
@@ -270,7 +269,6 @@ ul {
 #sticky-social a[class*="video"] span { background: #FF0000; } 
 
 .navbar {
-  background:url(/assets/img/header.png);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,7 +364,7 @@ ul {
 
 .navbar-head {
   height: 50px;
-  background: transparent url("/assets/img/head.png") no-repeat center bottom;
+  
   position: relative;
   z-index: 1;
 }

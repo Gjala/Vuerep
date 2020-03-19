@@ -1,27 +1,13 @@
 <?php get_header(); ?>
-
-      
-	  
-	<!--Navbar head-->
-
-	<!--logo-->
 	  <div class="logo_area">
 	  <a href="index.php"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/logo.png" class="r_height" alt=""></a> 
       </div>
-    <!--logo-->
+    
 <div class="Slider"><?php echo do_shortcode('[slick-slider design="design-3" image_fit="true" sliderheight="400"]
-
-
-
-
-
-
-
 
 
 '); ?></div>
 
-<!-- Services      <a href="index.html"><h1>heading</h1></a> -->
 <section>
 	<div class="container">
 	
@@ -93,24 +79,19 @@
 						</div>
 					</div>
 				</div>
-	
-				
-	
 				
 			</div>
 	
 	</div>
 	
 	</section>
-<!-- Services END -->
+
 <div class="container" id="sale__head">
 	<div class="row">
 	  <h2 class="h__text" >სააქციო ზონა <i class="fas fa-percent fa-1x text-warning "></i></h2>
 	
   </div>
   </div>
-
-
   <!-- Products -->
   <section id="product__sec">
 	  <div class="container">
@@ -172,5 +153,4 @@
 <!-- Social Aside END -->
 
 <?php get_footer(); ?>
-
 
